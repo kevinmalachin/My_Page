@@ -1,6 +1,7 @@
-function conversioneSessantesimiInCentesimi() {
-
-let centesimi = 120.64; //variabile per i centesimi
-let sessantesimi = centesimi * (60 / 100); //converto i centesimi in sessantesimi
-console.log(`il valore in sessantesimi è ${sessantesimi}`);
+function centesimiInSessantesimi(){
+    let input = prompt("Inserisci il valore in centesimi.");
+    if(input!="") console.log(`Il valore in sessantesimi è ${input * (60/100)}`);
+     else console.log("vuoto!");
 }
+
+centesimiInSessantesimi()
