@@ -1,0 +1,24 @@
+body {
+background-image: url(https://independent-photo.com/wp-content/uploads/2022/02/Yifeng-Ding-scaled.jpeg);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    width: 200px;
+    background-color:
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+  }
