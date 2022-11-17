@@ -3,5 +3,3 @@ function centesimiInSessantesimi(){
     if(input!="") console.log(`Il valore in sessantesimi è ${input * (60/100)}`);
      else console.log("vuoto!");
 }
-
-centesimiInSessantesimi()
