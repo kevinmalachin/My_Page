@@ -3,10 +3,9 @@ background-color: gainsboro;
 }
 
 div {
-    border: ;
     text-align: center;
-    vertical-align: text-top;
     padding: 10px;
-    width: 800px;
-    height: 100px;
+    width: 700px;
+    height: 200px;
+    
   }
