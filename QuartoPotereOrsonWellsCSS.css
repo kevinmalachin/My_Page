@@ -1,7 +1,12 @@
 body {
-backdrop-color: blue;
+background-color: gainsboro;
 }
 
-br {
-    color: aliceblue;
-}
+div {
+    border: ;
+    text-align: center;
+    vertical-align: text-top;
+    padding: 10px;
+    width: 800px;
+    height: 100px;
+  }
