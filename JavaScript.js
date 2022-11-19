@@ -32,6 +32,10 @@ function minutiInOre(){
 
 
 /*
+Per modificare lo stile 
 
+document.getElementById(id).style.property = new style
+
+Considera che i nomi delle proprietà in js sono a volte leggermente diversi quindi controlla online
 
 */
