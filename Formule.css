@@ -2,11 +2,18 @@ body {
     background-color: cornflowerblue;
 }
 
-
+ /*Colori dei bottoni sia input che output*/
 button {
     background-color: tan;
     width: 200px;
     padding: 10px;
     margin: 10px;
     height: 100px;
+}
+
+
+ /* Metto un background-color diverso per i bottoni degli output selezionando p ma width è un probllema, puoi togliere p*/
+p {
+    background-color: aliceblue;
+    width: ;
 }
