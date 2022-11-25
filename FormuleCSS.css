@@ -14,6 +14,6 @@ button {
 
  /* Metto un background-color diverso per i bottoni degli output selezionando p ma width è un probllema, puoi togliere p*/
 p {
-    background-color: aliceblue;
-    
+    background: linear-gradient(white, cornflowerblue);;
+    width: fit-content;
 }
