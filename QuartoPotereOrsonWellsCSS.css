@@ -1,12 +1,11 @@
 body {
-background-color: gainsboro;
-background-image: url();
+background: linear-gradient(to right, rgb(236, 225, 225), rgb(205, 191, 191));
 }
 
 div {
     text-align: center;
     margin: auto;
     padding: top;
-    width: 33%;
+    width: 42%;
     height: ;
   }
