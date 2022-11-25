@@ -1,5 +1,5 @@
 body {
-background: linear-gradient(to right, rgb(236, 225, 225), rgb(205, 191, 191));
+background: linear-gradient(to right, rgb(236, 225, 225), rgb(214, 203, 203));
 }
 
 div {
@@ -8,4 +8,10 @@ div {
     padding: top;
     width: 42%;
     height: ;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
