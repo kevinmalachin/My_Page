@@ -1,0 +1,98 @@
+.FirstHalf {
+    background-color: #1F2937;
+  }
+  
+  .nav-bar{
+    color: white;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+  }
+  
+  
+  .TopLogo {
+    color: white;
+    background-color: #1F2937;
+    display: flex;
+  }
+  
+  .items a {
+    color: white;
+    background-color: #1F2937;
+    text-align: end;
+    align-items: top;
+  }
+  
+  
+  
+  
+  
+  
+  .Container {
+    color: white;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .MyFirstWebSite {
+    color: white;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  
+  .MyFirstWebSite2 {
+    color: white;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+   justify-content: end;
+  }
+  
+  
+  
+  .SecondHalf {
+    background-color: white;
+  
+  }
+  
+  .main-content h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+  
+  .ContainerDelleImmagini {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .Img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    }
+  
+    .Img img {
+      object-fit: cover;
+      width: 150px;
+      height: 150px;
+    }
+  
+    .SeNonOraQuando {
+      background-color: #E5E7EB;
+      height: 500px;
+    }
+    .SeNonOraQuando p {
+      display: flex;
+      justify-content: end;
+    }
