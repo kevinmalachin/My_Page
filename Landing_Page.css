@@ -1,15 +1,13 @@
-.FirstHalf {
-    background-color: #3d4652;
-  }
-  
-  .nav-bar{
-    color: white;
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: top;
-  }
+
+    .nav-bar{
+      color: white;
+      background-color: #1F2937;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: top;
+    }
+
   
   
   .TopLogo {
@@ -38,7 +36,6 @@
   
   .MyFirstWebSite {
     color: white;
-    background-color: #1F2937;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +44,7 @@
   
   
   .MyFirstWebSite2 {
-    color: white;
+    color: rgb(141, 66, 66);
     background-color: #1F2937;
     display: flex;
     flex-direction: row;
@@ -68,7 +65,6 @@
   }
   
   .ContainerDelleImmagini {
-    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
