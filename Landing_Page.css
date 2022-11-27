@@ -9,7 +9,6 @@
     }
 
   
-  
   .TopLogo {
     color: rgb(213, 166, 166);
     background-color: #1F2937;
@@ -17,17 +16,12 @@
   }
   
   .items a {
-    color: wheat;
+    color: white;
     background-color: #1F2937;
   }
   
-  
-  
-  
-  
-  
   .Container {
-    color: white;
+    color: rgb(190, 26, 26);
     background-color: #1F2937;
     display: flex;
     flex-direction: row;
@@ -50,7 +44,6 @@
     flex-direction: row;
    justify-content: end;
   }
-  
   
   
   .SecondHalf {
