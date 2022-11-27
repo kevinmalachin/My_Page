@@ -1,5 +1,5 @@
 .FirstHalf {
-    background-color: #1F2937;
+    background-color: #3d4652;
   }
   
   .nav-bar{
@@ -13,16 +13,14 @@
   
   
   .TopLogo {
-    color: white;
+    color: rgb(213, 166, 166);
     background-color: #1F2937;
     display: flex;
   }
   
   .items a {
-    color: white;
+    color: wheat;
     background-color: #1F2937;
-    text-align: end;
-    align-items: top;
   }
   
   
@@ -59,7 +57,7 @@
   
   
   .SecondHalf {
-    background-color: white;
+    background-color: rgb(185, 97, 97);
   
   }
   
@@ -79,7 +77,7 @@
   .Img {
     width: 150px;
     height: 150px;
-    margin: 20px;
+    margin: 10px;
     }
   
     .Img img {
@@ -89,10 +87,11 @@
     }
   
     .SeNonOraQuando {
-      background-color: #E5E7EB;
+      background-color: #558eff;
       height: 500px;
     }
     .SeNonOraQuando p {
       display: flex;
       justify-content: end;
+      color: antiquewhite;
     }
