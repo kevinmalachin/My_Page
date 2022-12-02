@@ -72,18 +72,16 @@ img {
     justify-content: center;
   }
   
-  .Img {
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    }
-  
-    .Img img {
+  /* Le quattro immagini prese per classe Immagini con selector img */
+
+    .Immagini img {
+      margin: 20px;
       object-fit: cover;
       width: 150px;
       height: 150px;
       border-radius: 10px 10px 10px 10px;
     }
+
   
     .SeNonOraQuando {
       background-color: #558eff;
