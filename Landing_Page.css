@@ -7,6 +7,8 @@ img {
   height: 200px;
 }
     
+/* seleziono l'immagine al centro della prima metà della pagina */
+
 .MyFirstWebSite2 .IMGPlaceholder img {
   width: 70%;
 }
@@ -87,6 +89,8 @@ img {
       display: flex;
       text-align: center;
     }
+
+    /* Per centrare il testo delle 4 immaginette */
 
     .ContainerDelleImmagini .Immagini p {
       text-align: center;

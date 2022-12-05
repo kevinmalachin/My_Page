@@ -8,3 +8,7 @@ width:400px;
 position: relative;
 }
 
+h1 {
+    text-align: center;
+    color: yellow;
+}
