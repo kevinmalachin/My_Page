@@ -81,12 +81,18 @@ img {
       height: 150px;
       border-radius: 10px 10px 10px 10px;
       display: flex;
+      text-align: center;
+    }
+
+    .ContainerDelleImmagini .Immagini p {
+      text-align: center;
     }
 
   
     .SeNonOraQuando {
       background-color: #558eff;
-      height: 500px;
+      height: 150px;
+      text-align: center;
     }
     .SeNonOraQuando p {
       display: flex;
