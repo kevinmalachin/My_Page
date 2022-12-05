@@ -17,3 +17,9 @@ p {
     background: linear-gradient(to right, white, cornflowerblue);
     width: fit-content;
 }
+
+/* Seleziono la classe dei Files */
+
+.Files {
+    text-align: center;
+}
