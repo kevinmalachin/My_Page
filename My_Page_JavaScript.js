@@ -42,4 +42,4 @@ $(document).ready(function(){
       });
   }
 
-  myInterval = setInterval(bumpNextImage, 20000);
+  myInterval = setInterval(bumpNextImage, 5000);

@@ -29,8 +29,8 @@ button {
 }
 
 .slide-container{
-  width: 500px;
-  height: 300px;
+  width: 5000px;
+  height: 5000px;
   background-color: #FF00FF;
   position: relative;
   overflow: hidden;
