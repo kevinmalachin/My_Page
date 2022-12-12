@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My_Page</title>
-    <link href='./My_Page_Style.css' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./My_Page_JavaScript.js"></script>
-</head>
-
+  <head>
+      <meta charset="UTF-8">
+      <title>My_Page</title>
+      <link href='./My_Page_Style.css' rel='stylesheet'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
   <body>
-
-
+    <div class="nav">
       <button id="menuButton">Menu</button>
       <div id="menu" style="display:none;">
           <ul>
@@ -23,7 +20,17 @@
             <li><a href="./Immagini.html" target="_blank">Immagini</a></li>
           </ul>
       </div>
+    </div>
+    
+    <div class="slide-container">
+      <img class="slide-img" style="z-index: 20;" src="https://source.unsplash.com/random/500×300?unique=0" />
+      <img class="slide-img" src="https://source.unsplash.com/random/1024x768?unique=1" />
+      <img class="slide-img" src="https://source.unsplash.com/random/1024x768?unique=2" />
+      <img class="slide-img" src="https://source.unsplash.com/random/1024x768?unique=3" />
+      <img class="slide-img" src="https://source.unsplash.com/random/1024x768?unique=4" />
+      <img class="slide-img" src="https://source.unsplash.com/random/1024x768?unique=5" />
+    </div>
+    <script src="./My_Page_JavaScript.js"></script>
 
-      
-</body>
+  </body>
 </html>
