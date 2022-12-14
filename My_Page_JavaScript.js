@@ -36,5 +36,5 @@ function bumpNextImage(){
     });
 }
 
-myInterval = setInterval(bumpNextImage, 2000);
+myInterval = setInterval(bumpNextImage, 5000);
 
