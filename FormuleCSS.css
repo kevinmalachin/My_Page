@@ -13,14 +13,12 @@ button {
 }
 
 
- /* Metto un background-color diverso per i bottoni degli output selezionando p ma width è un probllema, puoi togliere p */
+ /* Metto un background-color diverso per i bottoni degli output selezionando p ma width è un problema, puoi togliere p */
 
 p {
     background: linear-gradient(to right, white, tan);
     width: fit-content;
 }
-
-/* Seleziono la classe dei Files */
 
 .Files {
     text-align: center;
