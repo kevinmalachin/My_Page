@@ -1,19 +1,21 @@
-* {
+/* {
   border: 2px solid red;
 }
-
+*/
 /* Barra in alto */
+
 .nav-bar{
   background-color: #1F2937;
   display: flex;
   justify-content: space-between;
-  align-items: top;
+  margin: ;
 }
 
   .TopLogo {
-    color: rgb(213, 166, 166);
+    color: white;
     background-color: #1F2937;
     display: flex;
+
   }
 
 
@@ -22,20 +24,36 @@
 .FirstHalf {
   height: 60%;
   width: 100%;
-  padding: 1px;
 }
 
 /* è il test a sinistra del pandemonio mio */
 
 .MyFirstWebSite {
   color: white;
-  flex-direction: column;
-  width: 70%;
-  padding: inherit;
+  width: 90%;
 }
 
 .MyFirstWebSite p {
-  text: #E5E7Eb;
+  margin-block-start: 3em;
+  left: 100px;
+  position: relative;
+  height: 50%;
+  width: 70%;
+
+}
+
+.MyFirstWebSite button {
+  background-color: #3882f6;
+  padding: 10px;
+  width: 20%;
+  left: 100px;
+  position: relative;
+  bottom: 40px;
+}
+
+.MyFirstWebSite h2 {
+  left: 20%;
+  position: relative;
 }
 
 .Container {
@@ -43,7 +61,7 @@
   background-color: #1F2937;
   height: 400px;
   display: inline-flex;
-  padding: 20px;
+  border: 40px;
 }
 
 .MyFirstWebSite2 {
@@ -52,26 +70,34 @@
   height: inherit;
 }
 
+/* Ora prendo il riquadro che contiene l'immagine del pandemonio */
+
 .MyFirstWebSite2 .PandemonioMio img {
   width: 50%;
+  height: 90%;
   border-radius: 20%;
   margin: 1%;
   position: relative;
 }
 
 .PandemonioMio {
-  
+  height: 90%;
 }
   
+.items {
+  width: 45%;
+  padding: 10px;
+}
+
   .items a {
     color: white;
     background-color: #1F2937;
+    margin: 10%;
+
   }
   
   
-  .SecondHalf {
-    background-color: rgb(185, 97, 97);
-  }
+ 
 
   .main-content {
     background-color: white;
