@@ -4,6 +4,13 @@
 */
 /* Barra in alto */
 
+
+/* seleziono l'immagine al centro della prima metà della pagina */
+
+.FirstHalf {
+  position: static;
+}
+
 .nav-bar{
   background-color: #1F2937;
   display: flex;
@@ -11,93 +18,85 @@
   margin: ;
 }
 
-  .TopLogo {
-    color: white;
-    background-color: #1F2937;
-    display: flex;
-
-  }
-
-
-/* seleziono l'immagine al centro della prima metà della pagina */
-
-.FirstHalf {
-  height: 60%;
-  width: 100%;
-}
-
-/* è il test a sinistra del pandemonio mio */
-
-.MyFirstWebSite {
+.TopLogo {
   color: white;
-  width: 90%;
-}
-
-.MyFirstWebSite p {
-  margin-block-start: 3em;
-  left: 100px;
-  position: relative;
-  height: 50%;
-  width: 70%;
-
-}
-
-.MyFirstWebSite button {
-  background-color: #3882f6;
-  padding: 10px;
-  width: 20%;
-  left: 100px;
-  position: relative;
-  bottom: 40px;
-}
-
-.MyFirstWebSite h2 {
-  left: 20%;
-  position: relative;
-}
-
-.Container {
-  color: rgb(190, 26, 26);
   background-color: #1F2937;
-  height: 400px;
-  display: inline-flex;
-  border: 40px;
+  display: flex;
+
 }
 
-.MyFirstWebSite2 {
-  margin: 20px auto;
-  width: 80%;
-  height: inherit;
-}
+/* questi sono i link a destra in alto alla navbar */
 
-/* Ora prendo il riquadro che contiene l'immagine del pandemonio */
-
-.MyFirstWebSite2 .PandemonioMio img {
-  width: 50%;
-  height: 90%;
-  border-radius: 20%;
-  margin: 1%;
-  position: relative;
-}
-
-.PandemonioMio {
-  height: 90%;
-}
-  
 .items {
   width: 45%;
   padding: 10px;
 }
 
-  .items a {
-    color: white;
-    background-color: #1F2937;
-    margin: 10%;
+.items a {
+  color: white;
+  background-color: #1F2937;
+  margin: 10%;
 
-  }
+}
+
+
+/* questi sono il primo blocco sotto la navbar con tutti i vari elementi */
+
+.Container {
+  position: relative;
+  color: rgb(190, 26, 26);
+  background-color: #1F2937;
+  width: 100%;
+}
+
+
+.MyFirstWebSite {
+  position: absolute;
+  color: white;
+  width: 50%;
+}
+
+.MyFirstWebSite h2 {
+  position: relative;
+  left: 20%;
+}
+
+.MyFirstWebSite p {
+  margin-block-start: 3em;
+  position: absolute;
+}
+
+.MyFirstWebSite button {
+  position: relative;
+  background-color: #3882f6;
+  padding: 10px;
+  width: 20%;
+}
+
+/* Ora prendo il riquadro che contiene l'immagine del pandemonio */
+
+.MyFirstWebSite2 {
+  width: 80%;
+}
+
+.PandemonioMio {
+  height: 90%;
+  width: 100%;
+}
+
+.MyFirstWebSite2 .PandemonioMio img {
+  width: 40%;
+  border-radius: 20%;
+  position: relative;
+  left: 80%;
+}
+
+/* passiamo alla sezione successiva */
   
-  
- 
+
+.SecondHalf {
+
+}
 
   .main-content {
     background-color: white;
@@ -135,7 +134,8 @@
       text-align: center;
     }
 
-  
+  /* ultima sezione + footer */
+
     .SeNonOraQuando {
       background-color: #558eff;
       height: 150px;
