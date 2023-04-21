@@ -1,70 +1,94 @@
-/* seleziono l'immagine al centro della prima metà della pagina */
-
-.MyFirstWebSite {
-  color: white;
-  display: inline;
-  flex-direction: column;
+* {
+  border: 2px solid red;
 }
 
-.PandemonioMio {
- 
-}
-
-.MyFirstWebSite2{
-  margin: 10px auto;
-  padding: 10px auto;
-  width: 5  0%;
-}
-
-.MyFirstWebSite2 .PandemonioMio img {
-  width: 50%;
-  padding: 50px;
-  border-radius: 20%;
-}
-
-    
+/* Barra in alto */
 .nav-bar{
-  color: white;
   background-color: #1F2937;
   display: flex;
   justify-content: space-between;
   align-items: top;
 }
 
-  
   .TopLogo {
     color: rgb(213, 166, 166);
     background-color: #1F2937;
     display: flex;
   }
+
+
+/* seleziono l'immagine al centro della prima metà della pagina */
+
+.FirstHalf {
+  height: 60%;
+  width: 100%;
+  padding: 1px;
+}
+
+/* è il test a sinistra del pandemonio mio */
+
+.MyFirstWebSite {
+  color: white;
+  flex-direction: column;
+  width: 70%;
+  padding: inherit;
+}
+
+.MyFirstWebSite p {
+  text: #E5E7Eb;
+}
+
+.Container {
+  color: rgb(190, 26, 26);
+  background-color: #1F2937;
+  height: 400px;
+  display: inline-flex;
+  padding: 20px;
+}
+
+.MyFirstWebSite2 {
+  margin: 20px auto;
+  width: 80%;
+  height: inherit;
+}
+
+.MyFirstWebSite2 .PandemonioMio img {
+  width: 50%;
+  border-radius: 20%;
+  margin: 1%;
+  position: relative;
+}
+
+.PandemonioMio {
+  
+}
   
   .items a {
     color: white;
     background-color: #1F2937;
   }
   
-  .Container {
-    color: rgb(190, 26, 26);
-    background-color: #1F2937;
-    height: 300px;
-    display: flex;
-  }
-  
   
   .SecondHalf {
     background-color: rgb(185, 97, 97);
+  }
+
+  .main-content {
+    background-color: white;
   }
   
   .main-content h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: white;
   }
   
   .ContainerDelleImmagini {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: white;
   }
   
   /* Le quattro immagini prese per classe Immagini con selector img */
@@ -91,9 +115,17 @@
       height: 150px;
       text-align: center;
       color: aliceblue;
+      background-color: #E5E7Eb;
+      color: #1F2937;
     }
     .SeNonOraQuando p {
       display: flex;
       justify-content: end;
-      color: antiquewhite;
+      color: #1F2937;
+    }
+
+    footer {
+      background-color: #1F2937;
+      color: white;
+      text-align: center;
     }
