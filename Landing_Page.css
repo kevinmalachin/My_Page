@@ -16,7 +16,8 @@
   background-color: #1F2937;
   display: flex;
   justify-content: space-between;
-  margin: ;
+  position: relative;
+  left: 0px;
 }
 
 .TopLogo {
@@ -160,11 +161,15 @@
       position: relative;
     }
 
-    .ThirdHalf .CTA{
+    .CTA{
+      position: relative;
       background-color: #3882f6;
-      padding: 5%;
+      padding: 1%;
       margin: 5%;
       color: white;
+      text-align: center;
+      width: 50%;
+      left: 15%
     }
 
     
@@ -175,7 +180,8 @@
       background-color: #3882f6;
       border-radius: 10%;
       border-color: white;
-      width: 8%;
+      bottom: 40%;
+      width: 10%;
     }
 
 
@@ -183,4 +189,5 @@
       background-color: #1F2937;
       color: white;
       text-align: center;
+      height: 40px;
     }
