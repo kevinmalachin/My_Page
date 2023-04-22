@@ -5,10 +5,11 @@
 /* Barra in alto */
 
 
+
 /* seleziono l'immagine al centro della prima metà della pagina */
 
 .FirstHalf {
-  position: static;
+  position: relative;
 }
 
 .nav-bar{
@@ -44,34 +45,39 @@
 
 .Container {
   position: relative;
-  color: rgb(190, 26, 26);
   background-color: #1F2937;
-  width: 100%;
 }
 
 
 .MyFirstWebSite {
-  position: absolute;
+  position: relative;
   color: white;
   width: 50%;
+  left: 5%;
 }
 
 .MyFirstWebSite h2 {
-  position: relative;
+  position: absolute;
   left: 20%;
 }
 
 .MyFirstWebSite p {
   margin-block-start: 3em;
   position: absolute;
+  text-align: center;
 }
 
 .MyFirstWebSite button {
-  position: relative;
+  position: absolute;
   background-color: #3882f6;
   padding: 10px;
   width: 20%;
+  left: 10%;
+  top: 100%;
+  margin: 10px;
 }
+
+
 
 /* Ora prendo il riquadro che contiene l'immagine del pandemonio */
 
@@ -79,16 +85,12 @@
   width: 80%;
 }
 
-.PandemonioMio {
-  height: 90%;
-  width: 100%;
-}
-
 .MyFirstWebSite2 .PandemonioMio img {
-  width: 40%;
+  width: 30%;
   border-radius: 20%;
   position: relative;
   left: 80%;
+  height: 550px;
 }
 
 /* passiamo alla sezione successiva */
@@ -134,7 +136,7 @@
       text-align: center;
     }
 
-  /* ultima sezione + footer */
+  /* penultima sezione */
 
     .SeNonOraQuando {
       background-color: #558eff;
@@ -145,10 +147,37 @@
       color: #1F2937;
     }
     .SeNonOraQuando p {
+      position: relative;
       display: flex;
       justify-content: end;
       color: #1F2937;
+      right: 25%;
     }
+
+  /* penultima sezione + footer*/
+
+    .ThirdHalf{
+      position: relative;
+    }
+
+    .ThirdHalf .CTA{
+      background-color: #3882f6;
+      padding: 5%;
+      margin: 5%;
+      color: white;
+    }
+
+    
+    .ThirdHalf button {
+      position: absolute;
+      right: 20%;
+      color: white;
+      background-color: #3882f6;
+      border-radius: 10%;
+      border-color: white;
+      width: 8%;
+    }
+
 
     footer {
       background-color: #1F2937;

@@ -4,11 +4,11 @@ $(document).ready(function(){
     }); 
   });
 
-var currentImg    = 0;                                   // keep track of current visible image index 
-var imgCollection = document.getElementsByClassName("slide-img"); // get all images
+let currentImg    = 0;                                   // keep track of current visible image index 
+let imgCollection = document.getElementsByClassName("slide-img"); // get all images
 
 // transform html collection to array
-var imgList = [];
+let imgList = [];
 Array.prototype.forEach.call(imgCollection, img => imgList.push(img) );
 
 // this function set the next image z-index to 20 and resets the z-index of the other images
