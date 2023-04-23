@@ -4,7 +4,15 @@
 */
 /* Barra in alto */
 
-
+/*
+body {
+  max-width: 100%;
+  width: 2000px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+*/
 
 /* seleziono l'immagine al centro della prima metà della pagina */
 
@@ -38,7 +46,7 @@
   color: white;
   background-color: #1F2937;
   margin: 10%;
-
+  text-decoration: none;
 }
 
 
@@ -92,6 +100,7 @@
   position: relative;
   left: 80%;
   height: 550px;
+  object-fit: cover;
 }
 
 /* passiamo alla sezione successiva */
@@ -190,4 +199,9 @@
       color: white;
       text-align: center;
       height: 40px;
+    }
+
+    footer p {
+      position: relative;
+      top: 20%;
     }
