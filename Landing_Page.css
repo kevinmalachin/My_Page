@@ -5,15 +5,10 @@
 
 /* Barra in alto */
 
-/*
+
 body {
-  max-width: 100%;
-  width: 2000px;
-  margin: 80px auto;
-  padding: 0 40px;
-  box-sizing: border-box;
+  margin: 0;
 }
-*/
 
 /* seleziono l'immagine al centro della prima metà della pagina */
 
@@ -232,12 +227,6 @@ body {
 
 
     /* responsive styles */
-
-    @media screen and (max-width: 1400px) {
-
-
-      
-    }
 
     @media screen and (max-width: 1400px) {
 
