@@ -10,6 +10,7 @@ body {
   margin: 0;
 }
 
+
 /* seleziono l'immagine al centro della prima metà della pagina */
 
 .FirstHalf {
@@ -234,8 +235,7 @@ body {
         width: 40%;
       }
 
-      /* Sostanzialmente il max-width significa sotto un certo valore comportati così */
-      
+  /* Sostanzialmente il max-width significa sotto un certo valore comportati così */      
     }
 
     @media screen and (max-width: 900px) {
