@@ -212,3 +212,53 @@ body {
       position: relative;
       top: 20%;
     }
+
+    /* pseudo-class */
+
+    .items a:hover{
+      text-decoration: underline;
+    }
+
+    .Immagini img:hover{
+      position: relative;
+      top: -4px;
+    }
+
+    .MyFirstWebSite2 .PandemonioMio img:hover{
+      position: relative;
+      top: -4px;
+    }
+
+
+
+    /* responsive styles */
+
+    @media screen and (max-width: 1400px) {
+
+
+      
+    }
+
+    @media screen and (max-width: 1400px) {
+
+      .MyFirstWebSite2 .PandemonioMio img {
+        width: 40%;
+      }
+
+      
+    }
+
+    @media screen and (max-width: 900px) {
+
+      .ThirdHalf button {
+        width: 15%;
+        right: 10%;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+
+      .MyFirstWebSite p {
+        width: 80%;
+      }
+    }
