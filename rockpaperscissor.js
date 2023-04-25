@@ -27,7 +27,7 @@ console.log(computerSelection());
 const result = function(setWinner) {
   if (playerSelection==="Rock" && computerSelection==="Scissor"){
     return `Computer Lose! ${playerSelection} beat ${computerSelection}`;
-  } else if(playerSelection==="0" && computerSelection==="1"){
+  } else if(playerSelection==="Rock" && computerSelection==="Scissor"){
       return `Computer Wins! ${computerSelection} beat ${playerSelection}`;
   } else if(playerSelection==="Rock" && computerSelection==="Paper"){
       return `Computer Wins! ${computerSelection} beat ${playerSelection}`;
