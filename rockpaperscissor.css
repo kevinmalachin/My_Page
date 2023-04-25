@@ -1,0 +1,54 @@
+/** {
+    border: 2px solid red;
+  }
+  */
+
+  body {
+    margin: 0;
+    /*background-color: #b1b1b1; */
+  }
+
+.Firshalf {
+    background-color: #b1b1b1;
+    display: flex;
+}
+
+.nav-bar {
+    text-align: center;
+    color: cornflowerblue;
+    background-color: #1F2937;
+    height: 10%;
+}
+
+.nav-bar h2 {
+    position: relative;
+    top: 30%;
+}
+
+.RockPaperScissor {
+    display: flex;
+    position: relative;
+    background-color: #b1b1b1;
+    height: 50%;
+    justify-content: center;
+}
+
+.RockPaperScissor h3 {
+    text-align: center;
+}
+
+.RockPaperScissor button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 15%;
+    top: 35%;
+}
+
+.SecondHalf {
+    display: flex;
+    background-color: #efefef;
+    height: 50%;
+}
