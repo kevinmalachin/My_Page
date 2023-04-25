@@ -1,3 +1,5 @@
+// random generates player pick
+
 const playerSelection = function(player) {
   let myPick = Math.floor(Math.random()*3);
   if (myPick===0)
@@ -11,6 +13,8 @@ const playerSelection = function(player) {
 console.log(playerSelection());
 
 
+// random generates Computer pick
+
 const computerSelection = function(computerPlay) {
   let sceltaPc = Math.floor(Math.random()*3);
     if (sceltaPc===0)
@@ -22,6 +26,9 @@ const computerSelection = function(computerPlay) {
 }
 
 console.log(computerSelection());
+
+
+// Set a winner between two players
 
 
 const result = function(setWinner) {
@@ -49,4 +56,5 @@ const result = function(setWinner) {
 
 }
 
+console.log(playerSelection(), computerSelection());
 console.log(result());
