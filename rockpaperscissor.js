@@ -1,29 +1,52 @@
-function computerPlay(){
-  BimBumBam=Math.floor(Math.random()*3);
-  if (BimBumBam===0)
-  return "Rock";
-  else if (BimBumBam===1)
-  return "Scissor";
-  else (BimBumBam===2)
-  return "Paper";
+const playerSelection = function(player) {
+  let myPick = Math.floor(Math.random()*3);
+  if (myPick===0)
+      return "Rock";
+    else if (myPick===1)
+      return "Scissor";
+    else (myPick===2)
+      return "Paper";
 }
-console.log(computerPlay())
+
+console.log(playerSelection());
 
 
-  function playRound(playerSelection,computerSelection){
-    // rendi case insensitive
-  return `You lose! x beats y`;
+const computerSelection = function(computerPlay) {
+  let sceltaPc = Math.floor(Math.random()*3);
+    if (sceltaPc===0)
+      return "Rock";
+    else if (sceltaPc===1)
+      return "Scissor";
+    else (sceltaPc===2)
+      return "Paper";
+}
+
+console.log(computerSelection());
+
+
+const result = function(setWinner) {
+  if (playerSelection==="Rock" && computerSelection==="Scissor"){
+    return `Computer Lose! ${playerSelection} beat ${computerSelection}`;
+  } else if(playerSelection==="0" && computerSelection==="1"){
+      return `Computer Wins! ${computerSelection} beat ${playerSelection}`;
+  } else if(playerSelection==="Rock" && computerSelection==="Paper"){
+      return `Computer Wins! ${computerSelection} beat ${playerSelection}`;
+  } else if(playerSelection==="Paper" && computerSelection==="Rock"){
+      return `Computer Lose! ${playerSelection} beat ${computerSelection}`;
+  } else if(playerSelection==="Scissor" && computerSelection==="Paper"){
+      return `Computer Lose! ${playerSelection} beat ${computerSelection}`;
+  } else if(playerSelection==="Scissor" && computerSelection==="Rock"){
+      return `Computer Wins! ${computerSelection} beat ${playerSelection}`;
+  } else if(playerSelection==="Rock" && computerSelection==="Rock"){
+      return `It's a Tie!`;
+  } else if(playerSelection==="Scissor" && computerSelection==="Scissor"){
+      return `It's a Tie!`;
+  } else if(playerSelection==="Paper" && computerSelection==="Paper"){
+      return `It's a Tie!`;
+  } else {
+    console.log('So what?');
   }
-  const playerSelection = prompt (`Please, enter your choice`);
-  const computerSelection = computerPlay();
 
-  console.log(playRound(playerSelection, computerSelection));
-  
+}
 
-  function game(){
-    playRound()
-    for (let i = 0; i < 5; i++) {
-      text += `The choice is" + i + "<br>`;
-      console.log(computerPlay())
-   }
-  }
+console.log(result());
