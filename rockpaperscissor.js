@@ -1,9 +1,17 @@
+// create the var
+
 const rps = [ 'rock', 'paper', 'scissors' ];
+
+// assign a score
 
 let playerScore = 0;
 let computerScore = 0;
 
+// random pick start
+
 const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)];
+
+// else, else if to determine who wins
 
 const playRound = (playerSelection, computerSelection) => {
     if (computerSelection === playerSelection) {
@@ -21,10 +29,36 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
+
+function playerChoice(){
+    let input = prompt("Pick your choice!");
+    if(input==="Scissor" || input==="Paper" || input==="Rock") {
+        document.getElementById("idMyTurn").innerHTML = `You pick is ${input}`;
+    } else if (input != "Rock" || input != "Scissor" || input != "Paper"){
+        alert("You must pick Rock, Paper or Scissor");
+    }
+}
+
+function computerChoice(){
+    
+}
+
+// display rounds
+
+
+
+
+/*
+
 let rounds = 3;
 
 while (rounds--) {
-    let playerChoice = 'scissors'; // make this interactive!
+let playerChoice = function player(){
+    let input = prompt("Make your choice!");
+    if(input!="") {
+        document.getElementById("idMyTurn").innerHTML = `La tua scelta è ${input}`;
+    }
+}
     let computerChoice = pickRandom(rps);
 
     console.log(`Player picked: ${playerChoice}`);
@@ -32,6 +66,10 @@ while (rounds--) {
 
     playRound(playerChoice, computerChoice);
 
+// show results
+
     console.log(`Player Score: ${playerScore}`);
     console.log(`Computer Score: ${computerScore}`);
 }
+
+*/
