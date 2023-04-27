@@ -31,9 +31,9 @@ const playRound = (playerSelection, computerSelection) => {
 
 
 function playerChoice(){
-    let input = prompt("Pick your choice!");
-    if(input==="Scissor" || input==="Paper" || input==="Rock") {
-        document.getElementById("idMyTurn").innerHTML = `You pick is ${input}`;
+    let input = prompt("Pick your choice!").toLocaleLowerCase();
+    if(input==="scissor" || input==="paper" || input==="rock") {
+        document.getElementById("idMyTurn").innerHTML = `Your pick is ${input}`;
     } else if (input != "Rock" || input != "Scissor" || input != "Paper"){
         alert("You must pick Rock, Paper or Scissor");
     }
