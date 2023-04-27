@@ -14,15 +14,12 @@
 }
 
 .nav-bar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: cornflowerblue;
     background-color: #1F2937;
-    height: 10%;
-}
-
-.nav-bar h2 {
-    position: relative;
-    top: 30%;
+    height: 11%;
 }
 
 .RockPaperScissor {
@@ -39,6 +36,15 @@
 
 .RockPaperScissor button {
     position: relative;
+    border: 2px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #212121;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 5px 5px #888888;
+    color: #e8e8e8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,5 +56,14 @@
 .SecondHalf {
     display: flex;
     background-color: #efefef;
-    height: 50%;
 }
+
+.video {
+    width: fit-content;
+    margin: 1px;
+}
+
+
+
+/* Pseudo class */
+

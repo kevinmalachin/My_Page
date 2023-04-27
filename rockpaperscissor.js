@@ -11,7 +11,19 @@ let computerScore = 0;
 
 const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)];
 
-// else, else if to determine who wins
+// prompt for the player
+
+
+function playerChoice(){
+    let input = prompt("Pick your choice!").toLocaleLowerCase();
+    if(input==="scissor" || input==="paper" || input==="rock") {
+        document.getElementById("idMyTurn").innerHTML = `Your pick is ${input}!`;
+    } else if (input != "rock" || input != "scissor" || input != "paper"){
+        alert("You must pick Rock, Paper or Scissor");
+    }
+}
+
+
 
 const playRound = (playerSelection, computerSelection) => {
     if (computerSelection === playerSelection) {
@@ -30,18 +42,6 @@ const playRound = (playerSelection, computerSelection) => {
 };
 
 
-function playerChoice(){
-    let input = prompt("Pick your choice!").toLocaleLowerCase();
-    if(input==="scissor" || input==="paper" || input==="rock") {
-        document.getElementById("idMyTurn").innerHTML = `Your pick is ${input}`;
-    } else if (input != "Rock" || input != "Scissor" || input != "Paper"){
-        alert("You must pick Rock, Paper or Scissor");
-    }
-}
-
-function computerChoice(){
-    
-}
 
 // display rounds
 
