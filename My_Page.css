@@ -15,7 +15,7 @@ li a {
 }
   
 button {
-  padding: 1em 2em;
+  padding: 1em 5em;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -27,7 +27,7 @@ button {
   position: relative;
   overflow: hidden;
   outline: 2px solid #2c9caf;
-  width: 100%;
+  margin: 5%;
 }
 
 .nav{
