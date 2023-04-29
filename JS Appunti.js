@@ -56,3 +56,7 @@ people.forEach(person => {         // array function con un solo valore non serv
 });
 
 // questo mi genera una serie di html per tutti i valori della mia array
+
+
+// getAttribute()  e setAttribute()
+
