@@ -173,15 +173,17 @@ body {
       position: relative;
     }
 
-    .CTA{
+    .CTA {
       position: relative;
       background-color: #3882f6;
       padding: 1%;
       margin: 5%;
       color: white;
-      text-align: center;
       width: 50%;
-      left: 15%
+      left: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     

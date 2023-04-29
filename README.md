@@ -2,7 +2,11 @@
 
 My_Page is the first one. Here we find a menù which lead to other pages.
 
-Here, on My_Page, we find also some images.
+We can find some JS formules to convert hours in minute and viceversa.
+
+There is also the landing page from The Odin Project.
+
+Here, on My_Page, we find also some random images.
 
 
 - Crea un file;
