@@ -143,3 +143,26 @@ console.log(x.parentElement.parentElement);   // trova il parent del parent
 console.log(x.nextElementSibling);
 
 console.log(x.previousElementSibling);
+
+// chaining
+
+console.log(x.nextElementSibling.parentElement.children);
+
+
+// eventListener
+
+// element.remove() per eliminare dalla pagina un elemento
+
+var.target.remove() // per rimuovere un elemento che clicco ad esempio in una todo list
+
+// per creare un elemento sulla pagina oltre innerHTML potremmo usare document.createElement('elemento  che vogliamo creare ad esempio li') e poi faccio elemento.textContent = 'testo'
+
+// BUBBLING & DELEGATION
+
+// importante soprattutto la delegation perchè così si può attaccare un eventListener a tutti gli elementi di modo che siano compresi anche quelli creati dopo senza dover fare tutto a mano
+
+// dato che gli eventListener vanno in alto verso il parent si può impedire questo comportamento con x.stopPropagation()
+
+ul.addEventListener('click' , (e) => {                              // prima richiamo click per l'evento che mi interessa poi callback function per fargli fare quello che mi interessa
+    console.log(e.target);
+});
