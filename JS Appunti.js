@@ -49,14 +49,97 @@ variabile.innerHTML = '<h2>modifica</h2>'
 
 const content = document.querySelector('.nomeClasse')
 
-const people = ['mario', 'luigi', 'wario'];
+const people = ['mario', 'luigi', 'wario'];        // oppure presa da un DB
 
 people.forEach(person => {         // array function con un solo valore non servono le parentesi 
-    content.innerHTML += `<p>${person}</p>`;  // richiamo la variabile content
+    content.innerHTML += `<p>${person}</p>`;  // richiamo la variabile content creata sopra
 });
 
 // questo mi genera una serie di html per tutti i valori della mia array
 
 
-// getAttribute()  e setAttribute()
+// getAttribute()  e setAttribute() => attributes sono tipo "class" o "href" etc
 
+const variabile = document.querySelector('a');  // prendo il riferimento all'anchor tag con querySelector
+
+console.log(variabile.getAttribute('href'));  // => getAttribute() per sapere che attribute ha quell'elemento che metto tra () e tra ''
+variabile.setAttribute('href', 'https://...');    // tra () metto prima ciò che voglio cambiare e poi il valore con cui lo voglio cambiare
+
+variabile.innerText = 'qualcosa'           // posso anche cambiare il testo del link così
+
+variabile.setAttribute('nuova', 'color: green');       // così posso aggiungere elementi che non esistevano nell'HTML
+
+
+
+// con setAttribute() posso anche sovrascrivere style di CSS ma se non volessi sovrasscrivere c'è la .style property 
+
+const variabile = document.querySelector('h1');
+
+console.log(variabile.style.color);   // per vedere il color del css nell'html
+
+variabile.style.margin = '50px';    // così aggiungo style al css, se avessi fatto variabile.setAttribute('style', 'margin = 50px;') lui avrebbe sovrascritto gli altri styles
+
+
+
+variabile.style.margin = '';  // così rimuovo uno style
+
+
+/* Cambiare Classi */
+
+variabile.classList.add('nomeClasseDaAggiungere');      // classList restituisce le classi
+
+variabile.classList.remove('nomeClasseDaAggiungere');   // per rimuovere
+
+// se volessi ciclare tra elementi HTML per aggiungere una classe error agli 'p' dove c'è la parola error e 'success' dove c'è la parola 'success' =>
+
+const variabile = document.querySelectorAll('p');
+
+variabile.forEach(x => {
+    if(x.textContent.includes('error')){             // textContent mostra tutto ciò che è compreso come testo nell'HTML mentre innerText se ci fossero elementi display none non li mostrerebbe
+        x.classList.add('error');               // classList.add('ciò che voglio aggiungere)
+    }
+    if(x.textContent.includes('success')){
+        x.classList.add('success');             // qui aggiungo success. Se volessi rimuovere potrei fare x.classList.remove('daRimuovere')
+    }         
+});
+
+// se volessi togliere un elemento che ha una certa classe e tenere un elemento che NON ha una classe => TOGGLE
+
+const variabile = document.querySelector('.test');
+
+test.classList.toggle('test1');         // qui dato che non trova classi con test1 la aggiunge
+test.classList.toggle('test1');         // qui dato che troverà la classe test1 la rimuoverà
+
+
+// se volessi vedere i children di un elemento
+
+const parent = documentquerySelector('parent');
+
+console.log(parent.children);   //// problema è che restituisce un HTML collection sulle quali NON si può ciclare (si può ciclare su node list o su array ma NON su HTML collection)
+
+// allora  convertiamo questa HTML collection in una array
+
+Array.from(parent.children)                 // => qui ritorniamo un NUOVO value, non è distruttiva
+console.log(Array.from(parent.children));
+
+// se volessi ciclare ora potrei farlo:
+
+Array.from(parent.children).forEach((child) => {                    // come parametro metto child così mi ritorna quello ogni volta che itera
+    child.classList.add('article-element');
+});
+
+// se volessi trovare il parent di un elemento
+
+const x = documentquerySelector('elementoChild');
+
+console.log(x.parentElement);
+
+// posso anche incatenarne più di una insieme per trovare i vari parent o child
+
+console.log(x.parentElement.parentElement);   // trova il parent del parent
+
+// se non conosco il parent o il child di un elemento posso scoprirlo
+
+console.log(x.nextElementSibling);
+
+console.log(x.previousElementSibling);
