@@ -166,3 +166,12 @@ var.target.remove() // per rimuovere un elemento che clicco ad esempio in una to
 ul.addEventListener('click' , (e) => {                              // prima richiamo click per l'evento che mi interessa poi callback function per fargli fare quello che mi interessa
     console.log(e.target);
 });
+
+
+// per i click =>
+
+const variabile = documentquerySelector('button');
+
+button.addEventListener('click', (e) => {
+    console.log('you clicked me');
+});
