@@ -1,8 +1,90 @@
-li {
-    list-style-type: none;
-    max-width: 200px;
-    padding: 8px;
-    margin: 8px auto;
-    background: #eee;
-    border: 1px dotted #ddd;
+body {
+  margin: 0;
 }
+
+.First-Part {
+  background-color: #fefbd8;
+  display: block;
+  justify-content: center;
+}
+
+ul {
+  align-items: center;
+}
+
+
+li {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    list-style-type: none;
+    width: 20%;
+    display: block;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+}
+
+/* Pseudo Class */
+
+button svg {
+    margin-right: 6px;
+  }
+
+button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+
+  li:disabled {
+    pointer-events: none;
+   }
+
+   li:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+
+   li:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
