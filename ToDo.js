@@ -3,7 +3,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
     // ul.innerHTML += '<li>Something New</li>';       potrei fare così ma meglio creare un nuovo li tag
     const li = document.createElement('li');    // ora ho la referenza all'elemento ma importante storarlo in una variabile
-    li.textContent = 'something new to do';     // ora devo rimandare a quell'elemento e fare textContent
+    li.textContent = prompt('');     // ora devo rimandare a quell'elemento e fare textContent
     // ul.append(li);
     ul.prepend(li);
 });
