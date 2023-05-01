@@ -59,6 +59,10 @@ button {
     border-radius: 20em;
 }
 
+.Second-Part {
+  background-color: #3B3B3B;
+}
+
 /* Pseudo Class */
 
 button svg {
