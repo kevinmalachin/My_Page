@@ -1,3 +1,10 @@
+const playerResults = document.querySelector('.playerResult');
+const computerResults = document.querySelector('.computerResult');
+const results = document.querySelector('.Results');
+const choiceButton = document.querySelector('.choiceButton');
+let player;
+let computer;
+
 // create the var
 
 const rps = [ 'rock', 'paper', 'scissors' ];
@@ -9,22 +16,53 @@ let computerScore = 0;
 
 // random pick start
 
-const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)];
+function pickRandom(){
+    const randomPick = Math.floor(Math.random() * 3) + 1;
+ 
+     switch(randomPick){
+         case 1:
+             return "Rock";
+             break; 
+         case 2:
+             return "Paper";
+             break;
+         case 3:
+             return "Scissor";
+             break;
+     };
+ };
 
-// prompt for the player
+
+// player
+
+choiceButton.addEventListener("click", e => {
+    e.preventDefault();
+     pickRandom();
+});
+
+let playerSelection = pickRandom();
+let computerSelection = pickRandom();
 
 
-function playerChoice(){
-    let input = prompt("Pick your choice!").toLocaleLowerCase();
-    if(input==="scissor" || input==="paper" || input==="rock") {
-        document.getElementById("idMyTurn").innerHTML = `Your pick is ${input}!`;
-    } else if (input != "rock" || input != "scissor" || input != "paper"){
-        alert("You must pick Rock, Paper or Scissor");
+// play the game
+
+function checkWinner(playerSelection, computerSelection){
+    if (computerSelection === playerSelection) {
+        console.log(`${playerSelection} vs. ${computerSelection}. It's a tie!`);
+    } else if (
+        (computerSelection === 'rock' && playerSelection === 'scissors') ||
+        (computerSelection === 'paper' && playerSelection === 'rock') ||
+        (computerSelection === 'scissors' && playerSelection === 'paper')
+    ) {
+        console.log(`${playerSelection} vs. ${computerSelection}. You lose! Try again next time.`);
+        computerScore++;
+    } else {
+        console.log(`${playerSelection} vs. ${computerSelection}. You win!`);
+        playerScore++;
     }
-}
+};
 
-
-
+/*
 const playRound = (playerSelection, computerSelection) => {
     if (computerSelection === playerSelection) {
         console.log(`${playerSelection} vs. ${computerSelection}. It's a tie!`);
@@ -41,7 +79,7 @@ const playRound = (playerSelection, computerSelection) => {
     }
 };
 
-
+*/
 
 // display rounds
 
