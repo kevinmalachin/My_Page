@@ -1,7 +1,7 @@
 const playerChoiceDisplay = document.getElementById('playerChoice');
 const computerChoice = document.getElementById('computerChoice');
 const results = document.getElementById('results');
-const choices = document.querySelectorAll('button');
+const choices = document.querySelectorAll('.choiceButton');
 let playerChoice;
 let computer;
 
@@ -38,8 +38,8 @@ function pickRandom(){
 choices.forEach(choices => choices.addEventListener('click', (e) => {
     e.preventDefault();
 
-    playerChoice = e.target.id;
-    playerChoiceDisplay.innerText = playerChoice;
+    playerChoice = e.target.id
+    playerChoiceDisplay.innerHTML = playerChoice
 
 }));
 
