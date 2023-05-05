@@ -1,8 +1,8 @@
-const playerResults = document.querySelector('.playerResult');
-const computerResults = document.querySelector('.computerResult');
-const results = document.querySelector('.Results');
-const choiceButton = document.querySelector('.choiceButton');
-let player;
+const playerChoiceDisplay = document.getElementById('playerChoice');
+const computerChoice = document.getElementById('computerChoice');
+const results = document.getElementById('results');
+const choices = document.querySelectorAll('button');
+let playerChoice;
 let computer;
 
 // create the var
@@ -35,14 +35,18 @@ function pickRandom(){
 
 // player
 
-choiceButton.addEventListener("click", e => {
+choices.forEach(choices => choices.addEventListener('click', (e) => {
     e.preventDefault();
-     pickRandom();
-});
 
-let playerSelection = pickRandom();
+    playerChoice = e.target.id;
+    playerChoiceDisplay.innerText = playerChoice;
+
+}));
+
+// computer selection
+
 let computerSelection = pickRandom();
-
+    console.log(computerSelection);
 
 // play the game
 
