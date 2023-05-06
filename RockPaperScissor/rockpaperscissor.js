@@ -1,4 +1,4 @@
-// get the elements
+// get the elements and variables
 
 const playerChoiceDisplay = document.getElementById('playerChoice');
 const computerChoiceDisplay = document.getElementById('computerChoice');
@@ -21,8 +21,9 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     e.preventDefault();
 
     userChoice = e.target.id
-    playerChoiceDisplay.innerHTML = userChoice
-    computerPick()
+    playerChoiceDisplay.innerHTML = userChoice       // assign the result to the HTML
+    computerPick()                                   // function for the computer pick
+    checkWinner()                                    // function to check who win the round
 }));
 
 // random pick by computer
@@ -47,6 +48,24 @@ function computerPick() {
     };
 
 // play the game = results
+
+function checkWinner() {
+    if (userChoice === computerChoice) {
+        results = "It's a tie!"
+    } else if (
+        (userChoice === 'Rock' && computerChoice === 'Scissors') ||
+        (userChoice === 'Paper' && computerChoice === 'Rock') ||
+        (userChoice === 'Scissors' && computerChoice === 'Paper')
+     ) {
+        results = "You Win!"
+        playerScore++;
+    } else {
+        results = "You lose! Try again next time!"
+        computerScore++;
+    }
+
+    resultsDiplay.innerHTML = results               // assign the result to the HTML
+};
 
 
 
