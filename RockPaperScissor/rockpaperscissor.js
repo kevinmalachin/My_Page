@@ -1,13 +1,12 @@
 const playerChoiceDisplay = document.getElementById('playerChoice');
 const computerChoice = document.getElementById('computerChoice');
 const results = document.getElementById('results');
-const choices = document.querySelectorAll('.choiceButton');
-let playerChoice;
-let computer;
+const possibleChoices = document.querySelectorAll('button');
+let userChoice
+let computer
 
 // create the var
 
-const rps = [ 'rock', 'paper', 'scissors' ];
 
 // assign a score
 
@@ -15,6 +14,17 @@ let playerScore = 0;
 let computerScore = 0;
 
 // random pick start
+
+
+// player
+
+possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    e.preventDefault();
+
+
+    userChoice = e.target.id
+    playerChoiceDisplay.innerHTML = userChoice
+}))
 
 function pickRandom(){
     const randomPick = Math.floor(Math.random() * 3) + 1;
@@ -31,17 +41,6 @@ function pickRandom(){
              break;
      };
  };
-
-
-// player
-
-choices.forEach(choices => choices.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    playerChoice = e.target.id
-    playerChoiceDisplay.innerHTML = playerChoice
-
-}));
 
 // computer selection
 
