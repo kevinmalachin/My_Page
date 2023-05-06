@@ -1,11 +1,12 @@
-const playerChoiceDisplay = document.getElementById('playerChoice');
-const computerChoice = document.getElementById('computerChoice');
-const results = document.getElementById('results');
-const possibleChoices = document.querySelectorAll('button');
-let userChoice
-let computer
+// get the elements
 
-// create the var
+const playerChoiceDisplay = document.getElementById('playerChoice');
+const computerChoiceDisplay = document.getElementById('computerChoice');
+const resultsDiplay = document.getElementById('results');
+const possibleChoices = document.querySelectorAll('button');
+let userChoice;
+let computerChoice;
+let results;
 
 
 // assign a score
@@ -13,57 +14,41 @@ let computer
 let playerScore = 0;
 let computerScore = 0;
 
-// random pick start
-
 
 // player
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     e.preventDefault();
 
-
     userChoice = e.target.id
     playerChoiceDisplay.innerHTML = userChoice
-}))
+    computerPick()
+}));
 
-function pickRandom(){
+// random pick by computer
+
+function computerPick() {
     const randomPick = Math.floor(Math.random() * 3) + 1;
  
      switch(randomPick){
          case 1:
-             return "Rock";
+            computerChoice = "Rock";
              break; 
          case 2:
-             return "Paper";
+            computerChoice = "Paper";
              break;
          case 3:
-             return "Scissor";
+            computerChoice = "Scissor";
              break;
-     };
- };
+     }
 
-// computer selection
+     computerChoiceDisplay.innerHTML = computerChoice         // assign the result to the HTML
+     
+    };
 
-let computerSelection = pickRandom();
-    console.log(computerSelection);
+// play the game = results
 
-// play the game
 
-function checkWinner(playerSelection, computerSelection){
-    if (computerSelection === playerSelection) {
-        console.log(`${playerSelection} vs. ${computerSelection}. It's a tie!`);
-    } else if (
-        (computerSelection === 'rock' && playerSelection === 'scissors') ||
-        (computerSelection === 'paper' && playerSelection === 'rock') ||
-        (computerSelection === 'scissors' && playerSelection === 'paper')
-    ) {
-        console.log(`${playerSelection} vs. ${computerSelection}. You lose! Try again next time.`);
-        computerScore++;
-    } else {
-        console.log(`${playerSelection} vs. ${computerSelection}. You win!`);
-        playerScore++;
-    }
-};
 
 /*
 const playRound = (playerSelection, computerSelection) => {
