@@ -29,18 +29,18 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 // random pick by computer
 
 function computerPick() {
-    const randomPick = Math.floor(Math.random() * 3 + 1);
+    const randomPick = Math.floor(Math.random() * 3);
  
      switch(randomPick){
+         case 0:
+            computerChoice = "Rock"; 
+            break;
          case 1:
-            computerChoice = "Rock";
-             break; 
-         case 2:
             computerChoice = "Paper";
-             break;
-         case 3:
-            computerChoice = "Scissor";
-             break;
+            break;
+         case 2:
+            computerChoice = "Scissors";
+            break;
      }
 
      computerChoiceDisplay.innerHTML = computerChoice         // assign the result to the HTML
