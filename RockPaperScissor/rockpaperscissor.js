@@ -4,6 +4,8 @@ const playerChoiceDisplay = document.getElementById('playerChoice');
 const computerChoiceDisplay = document.getElementById('computerChoice');
 const resultsDiplay = document.getElementById('results');
 const possibleChoices = document.querySelectorAll('button');
+let playerTotal = document.getElementById('player');
+let computerTotal = document.getElementById('computer');
 let userChoice;
 let computerChoice;
 let results;
@@ -21,7 +23,6 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     e.preventDefault();
 
     userChoice = e.target.id
-    playerChoiceDisplay.innerHTML = userChoice       // assign the result to the HTML for the player
     computerPick()                                   // function for the computer pick
     checkWinner()                                    // function to check who win the round
 }));
@@ -33,8 +34,8 @@ function computerPick() {
  
      switch(randomPick){
          case 0:
-            computerChoice = "Rock"; 
-            break;
+            computerChoice = "Rock";
+            break; 
          case 1:
             computerChoice = "Paper";
             break;
@@ -43,9 +44,9 @@ function computerPick() {
             break;
      }
 
-     computerChoiceDisplay.innerHTML = computerChoice         // assign the result to the HTML
+     computerChoiceDisplay.innerText = `Computer pick : ${computerChoice}`         // assign the result to the HTML
      
-    };
+};
 
 // play the game = results
 
@@ -64,9 +65,13 @@ function checkWinner() {
         computerScore++;
     }
 
-    resultsDiplay.innerHTML = results               // assign the result to the HTML
+        playerTotal.innerHTML = playerScore;            // counting player victories
+        computerTotal.innerHTML = computerScore;        // counting computer victories
+
+        resultsDiplay.innerHTML = results               // assign the result to the HTML
 };
 
+// now we check who wins on five rounds
 
 
 
