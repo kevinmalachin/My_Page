@@ -72,8 +72,3 @@ function checkWinner() {
 };
 
 // now we check who wins on five rounds
-
-
-
-// now we check who wins on five rounds
-
