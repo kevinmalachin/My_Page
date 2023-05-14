@@ -81,5 +81,5 @@ function checkWinner() {
             computerTotal.innerHTML = "Oh no! You LOST"
             playerScore = 0;
             computerScore = 0;
-            }
+        }
 };
