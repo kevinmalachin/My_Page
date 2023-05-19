@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #A9A9A9;
+}
+
+.Calculator {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #A9A9A9;
+    border-radius: 15px;
+    transform: scale(.7);
+    box-shadow: 0 10px 30px rgba(37, 37, 37, 0.95);
+    height: 50%;
+}
+
+.Display {
+    grid-column: 2 / 2;
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: inset 0 0 10px rgb(37, 37, 37);
+    border-radius: 10px;
+    height: 110px;
+}
+
+.numbers {
+    display: grid;
+    grid-gap: 10px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    border: 0px;
+    background-color: rgba(255, 255 ,255, 0.05);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+}
+
+.equal {
+    grid-column: span 2;
+}
+
+.previous-operand {
+    color: white;
+}
+
+.current-operand {
+    color: white;
+}
+
+/* Pseudo Class */
+
+button:hover {
+background-color: rgba(255, 255 ,255, 0.50);
+    transform: scale(.91);
+    font-size: 2rem;
+}
