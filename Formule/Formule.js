@@ -1,50 +1,3 @@
-
-
-
-function centesimiInSessantesimi(){
-    let input = prompt("Inserisci il valore in centesimi.");
-    if(input!="") {
-        document.getElementById("resultp").innerHTML = `il valore in sessantesimi è ${input * (60/100)}`;
-    } else {
-        document.getElementById("resultp").innerHTML = `Vuoto!`;
-    }
-
-}
-
-
-
-function oreInMinuti(){
-    let input = prompt("Inserisci il valore in Ore");
-        if (input!="") {
-            document.getElementById("idore").innerHTML = `il valore in minuti è ${input * 60}`;
-        } else {
-            document.getElementById("idore").innerHTML = `Vuoto!`;
-        }
-}
-
-
-function minutiInOre(){
-    let input = prompt("Inserisci il valore in Minuti");
-    if (input!="") {
-        document.getElementById("idminuti").innerHTML = `il valore in ore è ${input / 60}`;
-    } else {
-        document.getElementById("idminuti").innerHTML = `Vuoto!`;
-    }
-}
-
-
-
-/*
-
-
-al posto di getElementsById si possono usare:
-
-- document.querySelector()
-
-prende solo il primo elemento che indico tra ()
-
-così
-
 // DOM elements, first the input fields, after output fields
 
 const centesimi = document.querySelector('.centesimi');
@@ -86,6 +39,49 @@ minutiInOre.addEventListener('click', e => {
         minutiInOre.innerHTML = alert(`Non inserisci nulla?`)
     }
 });
+
+
+
+/*
+
+
+al posto di getElementsById si possono usare:
+
+- document.querySelector()
+
+prende solo il primo elemento che indico tra ()
+
+codice di gu con html tra commento 
+
+function centesimiInSessantesimi(){
+    let input = prompt("Inserisci il valore in centesimi.");
+    if(input!="") {
+        document.getElementById("resultp").innerHTML = `il valore in sessantesimi è ${input * (60/100)}`;
+    } else {
+        document.getElementById("resultp").innerHTML = `Vuoto!`;
+    }
+}
+
+
+
+function oreInMinuti(){
+    let input = prompt("Inserisci il valore in Ore");
+        if (input!="") {
+            document.getElementById("idore").innerHTML = `il valore in minuti è ${input * 60}`;
+        } else {
+            document.getElementById("idore").innerHTML = `Vuoto!`;
+        }
+}
+
+
+function minutiInOre(){
+    let input = prompt("Inserisci il valore in Minuti");
+    if (input!="") {
+        document.getElementById("idminuti").innerHTML = `il valore in ore è ${input / 60}`;
+    } else {
+        document.getElementById("idminuti").innerHTML = `Vuoto!`;
+    }
+}
 
 
 
