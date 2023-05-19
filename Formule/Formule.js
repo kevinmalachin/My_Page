@@ -43,6 +43,53 @@ al posto di getElementsById si possono usare:
 
 prende solo il primo elemento che indico tra ()
 
+così
+
+// DOM elements, first the input fields, after output fields
+
+const centesimi = document.querySelector('.centesimi');
+const oreInMinuti = document.querySelector('.oreInMinuti');
+const minutiInOre = document.querySelector('.minutiInOre');
+
+const resultp = document.getElementById('resultp');
+const idore = document.getElementById('idore');
+
+centesimi.addEventListener('click', e => {
+    e.preventDefault();
+
+    centesimi.innerHTML = prompt();
+    if (centesimi.innerHTML !== '') {
+        return resultp.innerHTML =  `il valore in sessantesimi è ${centesimi.innerHTML * (60/100)}`
+    } else {
+        centesimi.innerHTML = alert(`Non inserisci nulla?`)
+    }
+});
+
+oreInMinuti.addEventListener('click', e => {
+    e.preventDefault();
+
+    oreInMinuti.innerHTML = prompt();
+    if (oreInMinuti.innerHTML !== '') {
+        return idore.innerHTML =  `il valore in ore è ${oreInMinuti.innerHTML * 60}`
+    } else {
+        oreInMinuti.innerHTML = alert(`Non inserisci nulla?`)
+    }
+});
+
+minutiInOre.addEventListener('click', e => {
+    e.preventDefault();
+
+    minutiInOre.innerHTML = prompt();
+    if (minutiInOre.innerHTML !== '') {
+        return idminuti.innerHTML =  `il valore in ore è ${minutiInOre.innerHTML / 60}`
+    } else {
+        minutiInOre.innerHTML = alert(`Non inserisci nulla?`)
+    }
+});
+
+
+
+
 const nuovaVariabileDoveStorareContenutoUpdatato = document.querySelector('p');
 
 poi per farlo vedere console.log(nuovaVariabileDoveStorareContenutoUpdatato.innerText) => vedo i contenuti di p
